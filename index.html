@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assignment.css">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><button id="home-btn">Home</button></li>
+                <li><button id="about-btn">About</button></li>
+                <li><button id="project-btn">Project</button></li>
+                <li><button id="contact-btn">Contact</button></li>
+            </ul>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="Home">
+            <h1>Hey all, welcome to my Portfolio</h1>
+            <img src="C-6331 Abhishek.jpg" alt="Abhishek" class="profile-pic">
+            <p>Hi, my name is Abhishek, and I am pursuing MCA from Cochin University of Science and Technology.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="display:none;">
+            <h2>About Me</h2>
+            <p>I am an aspiring techie with interests in subjects like machine learning, A.I., web technologies, DevOps, etc. I also take an interest in other fields, like writing and drawing.</p>
+        </section>
+
+        <!-- Project Section -->
+        <section id="Project" style="display:none;">
+            <div class="project">
+                <h2>My current project is a web application that translates and summarizes text.</h2>
+                <a href="#" target="_blank">View here</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" style="display:none;">
+            <h2>You can know me more through my LinkedIn profile</h2>
+            <a href="https://www.linkedin.com/in/abhishek-puliyankalath-b3b552254/" target="_blank">View here</a>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="thank-you-message" class="hidden">Thank you for your message!</p>
+        </section>
+
+        <script src="assignment.js"></script> 
+    </body>
+</html>
